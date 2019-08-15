@@ -1,6 +1,6 @@
 {
   "name": "cultural",
-  "version": "0.0.1-alpha",
+  "version": "0.0.2-alpha",
   "description": "Fake data generator based on Iain bank culture series.",
   "main": "index.js",
   "scripts": {
