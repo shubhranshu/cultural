@@ -1,19 +1,41 @@
 {
   "name": "cultural",
-  "version": "1.0.0",
-  "description": "placehilder\u001b[D\u001b[D\u001b[D\u001b[o",
+  "version": "0.0.1-alpha",
+  "description": "Fake data generator based on Iain bank culture series.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx mocha ./test --require @babel/polyfill --require @babel/register"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shubhranshu/cultural.git"
   },
-  "author": "",
+  "author": "Shubhranshu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/shubhranshu/cultural/issues"
   },
-  "homepage": "https://github.com/shubhranshu/cultural#readme"
+  "homepage": "https://github.com/shubhranshu/cultural#readme",
+  "keywords": [
+    "data",
+    "fake",
+    "culture",
+    "sci-fi",
+    "test",
+    "testing",
+    "random",
+    "generator",
+    "names"
+  ],
+  "dependencies": {
+    "seedrandom": "^3.0.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/polyfill": "^7.4.4",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "mocha": "^6.2.0",
+    "nodemon": "^1.19.1"
+  }
 }
