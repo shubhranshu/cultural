@@ -12,11 +12,8 @@ class Randomizer {
   getRandom() {
     const arng = new alea(this.seed);
     const dsLength = this.dataSet.length;
-    // console.log('dsLength : ' + dsLength);
     let signedRandInRange = arng.int32() % dsLength;
-    let unsignedRandInRange =
-      signedRandInRange >= 0 ? signedRandInRange : signedRandInRange * -1;
-    // console.log('Rand in range : ' + this.dataSet[unsignedRandInRange]);
+    let unsignedRandInRange = signedRandInRange >= 0 ? signedRandInRange : signedRandInRange * -1;
     return this.dataSet[unsignedRandInRange];
   }
 }
